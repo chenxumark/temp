@@ -93,7 +93,7 @@
     </TileMatrixSetLink>
 
         
-    <ResourceURL format="image/jpgpng" resourceType="tile" template="http://172.30.240.80:82/Proxy.ashx?http://gis239044.up.gz/arcgis/rest/services/2017%E5%B9%B402%E7%B1%B3%E8%88%AA%E7%A9%BA%E5%BD%B1%E5%83%8F/MapServer/WMTS/tile/1.0.0/2017年02米航空影像/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}/?region=all&regiontype=1" />
+    <ResourceURL format="image/jpgpng" resourceType="tile" template="http://172.30.240.80:82/Proxy.ashx?http://gis239044.up.gz/arcgis/rest/services/2017%E5%B9%B402%E7%B1%B3%E8%88%AA%E7%A9%BA%E5%BD%B1%E5%83%8F/MapServer/WMTS/tile/1.0.0/2017年02米航空影像/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}/?region=all%26regiontype=1" />
   </Layer> 
    <!--TileMatrixSet-->
    <TileMatrixSet>
