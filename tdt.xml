@@ -27,7 +27,7 @@
 	<ows:Operation name="GetCapabilities">
 		<ows:DCP>
 			<ows:HTTP>
-				<ows:Get xlink:href="http://172.30.240.180:6080/arcgis/rest/services/%E5%9F%BA%E7%A1%80%E5%9C%B0%E7%90%86%E4%BF%A1%E6%81%AF/%E5%A4%A9%E5%9C%B0%E5%9B%BE2017New/MapServer/WMTS/1.0.0/WMTSCapabilities.xml">
+				<ows:Get xlink:href="http://jzdj.gzlpc.gov.cn/Proxy/proxy.ashx?http://172.30.240.180:6080/arcgis/rest/services/%E5%9F%BA%E7%A1%80%E5%9C%B0%E7%90%86%E4%BF%A1%E6%81%AF/%E5%A4%A9%E5%9C%B0%E5%9B%BE2017New/MapServer/WMTS/1.0.0/WMTSCapabilities.xml">
 					<ows:Constraint name="GetEncoding">
 						<ows:AllowedValues>
 							<ows:Value>RESTful</ows:Value>
@@ -35,7 +35,7 @@
 					</ows:Constraint>
 				</ows:Get>
                 <!-- add KVP binding in 10.1 -->
-                <ows:Get xlink:href="http://172.30.240.180:6080/arcgis/rest/services/%E5%9F%BA%E7%A1%80%E5%9C%B0%E7%90%86%E4%BF%A1%E6%81%AF/%E5%A4%A9%E5%9C%B0%E5%9B%BE2017New/MapServer/WMTS?">
+                <ows:Get xlink:href="http://jzdj.gzlpc.gov.cn/Proxy/proxy.ashx?http://172.30.240.180:6080/arcgis/rest/services/%E5%9F%BA%E7%A1%80%E5%9C%B0%E7%90%86%E4%BF%A1%E6%81%AF/%E5%A4%A9%E5%9C%B0%E5%9B%BE2017New/MapServer/WMTS?">
                   <ows:Constraint name="GetEncoding">
                     <ows:AllowedValues>
                       <ows:Value>KVP</ows:Value>
@@ -48,14 +48,14 @@
 	<ows:Operation name="GetTile">
 		<ows:DCP>
 			<ows:HTTP>
-				<ows:Get xlink:href="http://172.30.240.180:6080/arcgis/rest/services/%E5%9F%BA%E7%A1%80%E5%9C%B0%E7%90%86%E4%BF%A1%E6%81%AF/%E5%A4%A9%E5%9C%B0%E5%9B%BE2017New/MapServer/WMTS/tile/1.0.0/">
+				<ows:Get xlink:href="http://jzdj.gzlpc.gov.cn/Proxy/proxy.ashx?http://172.30.240.180:6080/arcgis/rest/services/%E5%9F%BA%E7%A1%80%E5%9C%B0%E7%90%86%E4%BF%A1%E6%81%AF/%E5%A4%A9%E5%9C%B0%E5%9B%BE2017New/MapServer/WMTS/tile/1.0.0/">
 					<ows:Constraint name="GetEncoding">
 						<ows:AllowedValues>
 							<ows:Value>RESTful</ows:Value>
 						</ows:AllowedValues>
 					</ows:Constraint>
 				</ows:Get>
-                <ows:Get xlink:href="http://172.30.240.180:6080/arcgis/rest/services/%E5%9F%BA%E7%A1%80%E5%9C%B0%E7%90%86%E4%BF%A1%E6%81%AF/%E5%A4%A9%E5%9C%B0%E5%9B%BE2017New/MapServer/WMTS?">
+                <ows:Get xlink:href="http://jzdj.gzlpc.gov.cn/Proxy/proxy.ashx?http://172.30.240.180:6080/arcgis/rest/services/%E5%9F%BA%E7%A1%80%E5%9C%B0%E7%90%86%E4%BF%A1%E6%81%AF/%E5%A4%A9%E5%9C%B0%E5%9B%BE2017New/MapServer/WMTS?">
                   <ows:Constraint name="GetEncoding">
                     <ows:AllowedValues>
                       <ows:Value>KVP</ows:Value>
@@ -93,7 +93,7 @@
     </TileMatrixSetLink>
 
         
-    <ResourceURL format="image/png" resourceType="tile" template="http://172.30.240.180:6080/arcgis/rest/services/%E5%9F%BA%E7%A1%80%E5%9C%B0%E7%90%86%E4%BF%A1%E6%81%AF/%E5%A4%A9%E5%9C%B0%E5%9B%BE2017New/MapServer/WMTS/tile/1.0.0/基础地理信息_天地图2017New/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}.png" />
+    <ResourceURL format="image/png" resourceType="tile" template="http://jzdj.gzlpc.gov.cn/Proxy/proxy.ashx?http://172.30.240.180:6080/arcgis/rest/services/%E5%9F%BA%E7%A1%80%E5%9C%B0%E7%90%86%E4%BF%A1%E6%81%AF/%E5%A4%A9%E5%9C%B0%E5%9B%BE2017New/MapServer/WMTS/tile/1.0.0/基础地理信息_天地图2017New/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}.png" />
   </Layer> 
    <!--TileMatrixSet-->
    <TileMatrixSet>
@@ -385,5 +385,5 @@
    </TileMatrixSet>
    
 </Contents>
-<ServiceMetadataURL xlink:href="http://172.30.240.180:6080/arcgis/rest/services/%E5%9F%BA%E7%A1%80%E5%9C%B0%E7%90%86%E4%BF%A1%E6%81%AF/%E5%A4%A9%E5%9C%B0%E5%9B%BE2017New/MapServer/WMTS/1.0.0/WMTSCapabilities.xml" /> 
+<ServiceMetadataURL xlink:href="http://jzdj.gzlpc.gov.cn/Proxy/proxy.ashx?http://172.30.240.180:6080/arcgis/rest/services/%E5%9F%BA%E7%A1%80%E5%9C%B0%E7%90%86%E4%BF%A1%E6%81%AF/%E5%A4%A9%E5%9C%B0%E5%9B%BE2017New/MapServer/WMTS/1.0.0/WMTSCapabilities.xml" /> 
 </Capabilities>
