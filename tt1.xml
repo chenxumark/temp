@@ -27,7 +27,7 @@
 	<ows:Operation name="GetCapabilities">
 		<ows:DCP>
 			<ows:HTTP>
-				<ows:Get xlink:href="http://172.30.240.80:82/Proxy.ashx?http://gis239044.up.gz/arcgis/rest/services/2017%E5%B9%B402%E7%B1%B3%E8%88%AA%E7%A9%BA%E5%BD%B1%E5%83%8F/MapServer/WMTS/1.0.0/WMTSCapabilities.xml">
+				<ows:Get xlink:href="http://172.30.240.80:82/Proxy.ashx?http://gis239044.up.gz/arcgis/rest/services/2017%E5%B9%B402%E7%B1%B3%E8%88%AA%E7%A9%BA%E5%BD%B1%E5%83%8F/MapServer/WMTS/1.0.0/WMTSCapabilities.xml?region=all&regiontype=1">
 					<ows:Constraint name="GetEncoding">
 						<ows:AllowedValues>
 							<ows:Value>RESTful</ows:Value>
@@ -35,7 +35,6 @@
 					</ows:Constraint>
 				</ows:Get>
                 <!-- add KVP binding in 10.1 -->
-                <ows:Get xlink:href="http://172.30.240.80:82/Proxy.ashx?http://gis239044.up.gz/arcgis/rest/services/2017%E5%B9%B402%E7%B1%B3%E8%88%AA%E7%A9%BA%E5%BD%B1%E5%83%8F/MapServer/WMTS?">
                   <ows:Constraint name="GetEncoding">
                     <ows:AllowedValues>
                       <ows:Value>KVP</ows:Value>
@@ -48,14 +47,14 @@
 	<ows:Operation name="GetTile">
 		<ows:DCP>
 			<ows:HTTP>
-				<ows:Get xlink:href="http://172.30.240.80:82/Proxy.ashx?http://gis239044.up.gz/arcgis/rest/services/2017%E5%B9%B402%E7%B1%B3%E8%88%AA%E7%A9%BA%E5%BD%B1%E5%83%8F/MapServer/WMTS/tile/1.0.0/">
+				<ows:Get xlink:href="http://172.30.240.80:82/Proxy.ashx?http://gis239044.up.gz/arcgis/rest/services/2017%E5%B9%B402%E7%B1%B3%E8%88%AA%E7%A9%BA%E5%BD%B1%E5%83%8F/MapServer/WMTS/tile/1.0.0/?region=all&regiontype=1/">
 					<ows:Constraint name="GetEncoding">
 						<ows:AllowedValues>
 							<ows:Value>RESTful</ows:Value>
 						</ows:AllowedValues>
 					</ows:Constraint>
 				</ows:Get>
-                <ows:Get xlink:href="http://172.30.240.80:82/Proxy.ashx?http://gis239044.up.gz/arcgis/rest/services/2017%E5%B9%B402%E7%B1%B3%E8%88%AA%E7%A9%BA%E5%BD%B1%E5%83%8F/MapServer/WMTS?">
+                <ows:Get xlink:href="http://172.30.240.80:82/Proxy.ashx?http://gis239044.up.gz/arcgis/rest/services/2017%E5%B9%B402%E7%B1%B3%E8%88%AA%E7%A9%BA%E5%BD%B1%E5%83%8F/MapServer/WMTS?region=all&regiontype=1">
                   <ows:Constraint name="GetEncoding">
                     <ows:AllowedValues>
                       <ows:Value>KVP</ows:Value>
