@@ -20,48 +20,33 @@
 	version="1.0.0">
   <!-- Service Identification --> 
  <ows:ServiceIdentification>
-	<ows:Title>2017年02米航空影像</ows:Title>
+	<ows:Title>2018DXT500</ows:Title>
 	<ows:ServiceType>OGC WMTS</ows:ServiceType>
 	<ows:ServiceTypeVersion>1.0.0</ows:ServiceTypeVersion>
 </ows:ServiceIdentification> <!-- Operations Metadata --> <ows:OperationsMetadata>
 	<ows:Operation name="GetCapabilities">
 		<ows:DCP>
 			<ows:HTTP>
-				<ows:Get xlink:href="http://gis239044.up.gz/arcgis/rest/services/2017%E5%B9%B402%E7%B1%B3%E8%88%AA%E7%A9%BA%E5%BD%B1%E5%83%8F/MapServer/WMTS/1.0.0/WMTSCapabilities.xml">
+				<ows:Get xlink:href="https://chenxumark.github.io/temp/TTNEW2.xml">
 					<ows:Constraint name="GetEncoding">
 						<ows:AllowedValues>
 							<ows:Value>RESTful</ows:Value>
 						</ows:AllowedValues>
 					</ows:Constraint>
 				</ows:Get>
-                <!-- add KVP binding in 10.1 -->
-                <ows:Get xlink:href="http://gis239044.up.gz/arcgis/rest/services/2017%E5%B9%B402%E7%B1%B3%E8%88%AA%E7%A9%BA%E5%BD%B1%E5%83%8F/MapServer/WMTS?">
-                  <ows:Constraint name="GetEncoding">
-                    <ows:AllowedValues>
-                      <ows:Value>KVP</ows:Value>
-                    </ows:AllowedValues>
-                  </ows:Constraint>
-                </ows:Get>
     		</ows:HTTP>
     </ows:DCP>
 	</ows:Operation>
 	<ows:Operation name="GetTile">
 		<ows:DCP>
 			<ows:HTTP>
-				<ows:Get xlink:href="http://gis239044.up.gz/arcgis/rest/services/2017%E5%B9%B402%E7%B1%B3%E8%88%AA%E7%A9%BA%E5%BD%B1%E5%83%8F/MapServer/WMTS/tile/1.0.0/">
+				<ows:Get xlink:href="http://172.30.240.80:82/Proxy.ashx?http://gis239041.up.gz/arcgis/rest/services/2018DXT500/MapServer/WMTS/tile/1.0.0/region=all%26regiontype=1">
 					<ows:Constraint name="GetEncoding">
 						<ows:AllowedValues>
 							<ows:Value>RESTful</ows:Value>
 						</ows:AllowedValues>
 					</ows:Constraint>
 				</ows:Get>
-                <ows:Get xlink:href="http://gis239044.up.gz/arcgis/rest/services/2017%E5%B9%B402%E7%B1%B3%E8%88%AA%E7%A9%BA%E5%BD%B1%E5%83%8F/MapServer/WMTS?">
-                  <ows:Constraint name="GetEncoding">
-                    <ows:AllowedValues>
-                      <ows:Value>KVP</ows:Value>
-                    </ows:AllowedValues>
-                  </ows:Constraint>
-                </ows:Get>
             </ows:HTTP>
 		</ows:DCP>
 	</ows:Operation>
@@ -69,31 +54,31 @@
 <Contents>
   <!--Layer-->  
   <Layer>
-    <ows:Title>2017年02米航空影像</ows:Title> 
-    <ows:Identifier>2017年02米航空影像</ows:Identifier>
+    <ows:Title>2018DXT500</ows:Title> 
+    <ows:Identifier>2018DXT500</ows:Identifier>
     
       <ows:BoundingBox crs="urn:ogc:def:crs:EPSG::0">
 	  
-			<ows:LowerCorner>6221.271000000066 166299.015</ows:LowerCorner>
-			<ows:UpperCorner>118675.80900000001 318721.441</ows:UpperCorner>
+			<ows:LowerCorner>6226.13580300007 165313.57592800073</ows:LowerCorner>
+			<ows:UpperCorner>118682.09179700038 318728.4812010002</ows:UpperCorner>
 		
       </ows:BoundingBox>  
       
     <ows:WGS84BoundingBox crs="urn:ogc:def:crs:OGC:2:84">
-      <ows:LowerCorner>113.33590574909856 1.5036919496196288</ows:LowerCorner>
-      <ows:UpperCorner>114.34736204193872 2.8823936426369436</ows:UpperCorner>
+      <ows:LowerCorner>113.33594923902211 1.4947815270192482</ows:LowerCorner>
+      <ows:UpperCorner>114.34741860169353 2.8824573082571114</ows:UpperCorner>
     </ows:WGS84BoundingBox>
     <Style isDefault="true">
       <ows:Title>Default Style</ows:Title>
       <ows:Identifier>default</ows:Identifier>
     </Style>
-    <Format>image/jpgpng</Format>
+    <Format>image/png</Format>
     <TileMatrixSetLink>
       <TileMatrixSet>default028mm</TileMatrixSet>
     </TileMatrixSetLink>
 
         
-    <ResourceURL format="image/jpgpng" resourceType="tile" template="http://gis239044.up.gz/arcgis/rest/services/2017%E5%B9%B402%E7%B1%B3%E8%88%AA%E7%A9%BA%E5%BD%B1%E5%83%8F/MapServer/WMTS/tile/1.0.0/2017年02米航空影像/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}" />
+    <ResourceURL format="image/png" resourceType="tile" template="http://172.30.240.80:82/Proxy.ashx?http://gis239041.up.gz/arcgis/rest/services/2018DXT500/MapServer/WMTS/tile/1.0.0/2018DXT500/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}.png?region=all%26regiontype=1" />
   </Layer> 
    <!--TileMatrixSet-->
    <TileMatrixSet>
@@ -224,7 +209,7 @@
           <TileHeight>256</TileHeight>
             
             <MatrixWidth>3391</MatrixWidth> 
-            <MatrixHeight>5809</MatrixHeight>
+            <MatrixHeight>5810</MatrixHeight>
           
           </TileMatrix>
           
@@ -238,7 +223,7 @@
           <TileHeight>256</TileHeight>
             
             <MatrixWidth>4845</MatrixWidth> 
-            <MatrixHeight>8298</MatrixHeight>
+            <MatrixHeight>8299</MatrixHeight>
           
           </TileMatrix>
           
@@ -252,7 +237,7 @@
           <TileHeight>256</TileHeight>
             
             <MatrixWidth>8478</MatrixWidth> 
-            <MatrixHeight>14522</MatrixHeight>
+            <MatrixHeight>14523</MatrixHeight>
           
           </TileMatrix>
           
@@ -266,7 +251,7 @@
           <TileHeight>256</TileHeight>
             
             <MatrixWidth>11303</MatrixWidth> 
-            <MatrixHeight>19362</MatrixHeight>
+            <MatrixHeight>19364</MatrixHeight>
           
           </TileMatrix>
           
@@ -280,7 +265,7 @@
           <TileHeight>256</TileHeight>
             
             <MatrixWidth>16955</MatrixWidth> 
-            <MatrixHeight>29043</MatrixHeight>
+            <MatrixHeight>29046</MatrixHeight>
           
           </TileMatrix>
           
@@ -294,7 +279,7 @@
           <TileHeight>256</TileHeight>
             
             <MatrixWidth>21193</MatrixWidth> 
-            <MatrixHeight>36304</MatrixHeight>
+            <MatrixHeight>36307</MatrixHeight>
           
           </TileMatrix>
           
@@ -308,7 +293,7 @@
           <TileHeight>256</TileHeight>
             
             <MatrixWidth>28258</MatrixWidth> 
-            <MatrixHeight>48405</MatrixHeight>
+            <MatrixHeight>48410</MatrixHeight>
           
           </TileMatrix>
           
@@ -322,7 +307,7 @@
           <TileHeight>256</TileHeight>
             
             <MatrixWidth>42386</MatrixWidth> 
-            <MatrixHeight>72607</MatrixHeight>
+            <MatrixHeight>72614</MatrixHeight>
           
           </TileMatrix>
           
@@ -336,7 +321,7 @@
           <TileHeight>256</TileHeight>
             
             <MatrixWidth>84772</MatrixWidth> 
-            <MatrixHeight>145214</MatrixHeight>
+            <MatrixHeight>145228</MatrixHeight>
           
           </TileMatrix>
           
@@ -350,12 +335,26 @@
           <TileHeight>256</TileHeight>
             
             <MatrixWidth>169544</MatrixWidth> 
-            <MatrixHeight>290427</MatrixHeight>
+            <MatrixHeight>290456</MatrixHeight>
+          
+          </TileMatrix>
+          
+          <TileMatrix>
+          <ows:Identifier>18</ows:Identifier>
+          
+          <ScaleDenominator>236.2355915187724</ScaleDenominator>
+          
+          <TopLeftCorner>-5623200.0 1.00021E7</TopLeftCorner>  
+          <TileWidth>256</TileWidth> 
+          <TileHeight>256</TileHeight>
+            
+            <MatrixWidth>339087</MatrixWidth> 
+            <MatrixHeight>580912</MatrixHeight>
           
           </TileMatrix>
           
    </TileMatrixSet>
    
 </Contents>
-<ServiceMetadataURL xlink:href="http://gis239044.up.gz/arcgis/rest/services/2017%E5%B9%B402%E7%B1%B3%E8%88%AA%E7%A9%BA%E5%BD%B1%E5%83%8F/MapServer/WMTS/1.0.0/WMTSCapabilities.xml" /> 
+<ServiceMetadataURL xlink:href="http://172.30.240.80:82/Proxy.ashx?http://gis239041.up.gz/arcgis/rest/services/2018DXT500/MapServer/WMTS/1.0.0/WMTSCapabilities.xml/region=all%26regiontype=1" /> 
 </Capabilities>
