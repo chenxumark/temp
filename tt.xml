@@ -27,7 +27,7 @@
 	<ows:Operation name="GetCapabilities">
 		<ows:DCP>
 			<ows:HTTP>
-				<ows:Get xlink:href="https://chenxumark.github.io/temp/TTNEW2.xml">
+				<ows:Get xlink:href="https://chenxumark.github.io/temp/tt.xml">
 					<ows:Constraint name="GetEncoding">
 						<ows:AllowedValues>
 							<ows:Value>RESTful</ows:Value>
@@ -40,7 +40,7 @@
 	<ows:Operation name="GetTile">
 		<ows:DCP>
 			<ows:HTTP>
-				<ows:Get xlink:href="http://172.30.240.80:82/Proxy.ashx?http://gis239041.up.gz/arcgis/rest/services/2018DXT500/MapServer/WMTS/tile/1.0.0/region=all%26regiontype=1">
+				<ows:Get xlink:href="http://172.30.240.80:82/Proxy.ashx?http://gis239041.up.gz/arcgis/rest/services/2018DXT500/MapServer/WMTS/tile/1.0.0/region=all%26regiontype=1/">
 					<ows:Constraint name="GetEncoding">
 						<ows:AllowedValues>
 							<ows:Value>RESTful</ows:Value>
@@ -356,5 +356,5 @@
    </TileMatrixSet>
    
 </Contents>
-<ServiceMetadataURL xlink:href="http://172.30.240.80:82/Proxy.ashx?http://gis239041.up.gz/arcgis/rest/services/2018DXT500/MapServer/WMTS/1.0.0/WMTSCapabilities.xml/region=all%26regiontype=1" /> 
+<ServiceMetadataURL xlink:href="https://chenxumark.github.io/temp/tt.xml" /> 
 </Capabilities>
