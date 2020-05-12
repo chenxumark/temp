@@ -48,7 +48,7 @@
 	<ows:Operation name="GetTile">
 		<ows:DCP>
 			<ows:HTTP>
-				<ows:Get xlink:href="http://172.30.240.80:82/Proxy.ashx?http://gis239041.up.gz/arcgis/rest/services/2018DXT2000/MapServer/WMTS/tile/1.0.0/region=all%26regiontype=1/">
+				<ows:Get xlink:href="http://172.30.240.80:82/Proxy.ashx?http://gis239041.up.gz/arcgis/rest/services/2018DXT2000/MapServer/WMTS/tile/1.0.0/">
 					<ows:Constraint name="GetEncoding">
 						<ows:AllowedValues>
 							<ows:Value>RESTful</ows:Value>
